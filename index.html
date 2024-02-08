@@ -7,7 +7,7 @@
     <title>Penguin</title>
     <!-- tailwind css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom designs -->
+    <!-- tailwind custom designs -->
     <script>
         tailwind.config = {
             theme: {
@@ -23,48 +23,46 @@
             }
         }
     </script>
-    <style>
-        .container{
-            width: 1140px;
-            padding: 0 30px;
-        }
-    </style>
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <div id="front" class="front-page">
         <header class="bg-headerbg">
-            <div class="container mx-auto"> 
+            <div class="container mx-auto">
                 <nav class="flex justify-between items-center py-10">
                     <div class="logo">
                         <img src="assets/images/logo.png" alt="" class="w-80">
                     </div><!-- logo -->
-                   <div class="navigation">
-                        <ul class="flex items-center gap-[4vh] uppercase font-semibold">
+                    <div class="navigation">
+                        <ul
+                            class="flex items-center gap-[4vh] font-['Roboto'] text-base font-medium text-[#3C3C3C] capitalize">
                             <li><a href="#">home</a></li>
                             <li><a href="#">product</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">contact us</a></li>
                         </ul>
-                   </div><!-- navigation -->
+                    </div><!-- navigation -->
                 </nav>
                 <!-- hero section start -->
-                <div class="hero flex flex-col-reverse sm:flex-row justify-between items-center py-20 sm:py-32"> <!-- px-3 md:px-12 -->
+                <div class="hero flex flex-col-reverse sm:flex-row justify-between items-center py-16 sm:py-20">
+                    <!-- px-3 md:px-12 -->
                     <div class="hero-content space-y-5 text-center sm:text-start mt-14 sm:mt-0">
                         <h2>
                             <span
-                                class="text-5xl md:text-4xl md:leading-relaxed lg:text-7xl lg:leading-tight xl:leading-loose font-semibold text-primarytextcolor">Be
-                                the
-                                Penguins</span>
+                                class="font-['Bebas_Neue'] text-6xl sm:text-7xl leading-tight text-primarytextcolor">Be
+                                the Penguins</span>
                             <br>
                             <span
-                                class="text-5xl leading-loose md:text-6xl lg:text-7xl font-semibold text-secondarytextcolor">of
+                                class="font-['Bebas_Neue'] text-6xl sm:text-7xl leading-tight text-secondarytextcolor">of
                                 Winter</span>
                         </h2>
-                        <p class="text-textcolor w-full sm:w-3/4">Lorem Ipsum is simply dummy text of the printing
+                        <p class="text-textcolor font-['Roboto'] text-base w-full sm:w-3/4">Lorem Ipsum is simply dummy
+                            text of the printing
                             and typesetting industry.</p>
-                        <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                        <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -84,21 +82,23 @@
             <!-- woman section start -->
             <section class="women-jacket mt-20 mb-16">
                 <div class="container mx-auto px-5">
-                    <h3 class="text-secondarytextcolor text-5xl font-bold uppercase text-center sm:text-start">woman
-                        jacket</h3>
+                    <h3
+                        class="text-secondarytextcolor font-['Bebas_Neue'] text-5xl uppercase text-center sm:text-start">
+                        woman jacket</h3>
                     <div class="w-jackets mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- single-item -->
                         <div class="single-jacket shadow-xl p-6 rounded-lg">
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-1.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Yellow Coat Jacket</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
                                     <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -115,13 +115,14 @@
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-2.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Ladies Jacket</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
-                                    <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <h5 class="text-primarytextcolor  text-4xl font-extrabold">$235</h5>
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -138,13 +139,14 @@
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-3.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Woman Leather Jacket</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
                                     <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -163,7 +165,9 @@
             <!-- man section start -->
             <section class="man-jacket mt-20 mb-16">
                 <div class="container mx-auto">
-                    <h3 class="text-secondarytextcolor text-5xl font-bold uppercase text-center sm:text-start">Man
+                    <h3
+                        class="text-secondarytextcolor font-['Bebas_Neue'] text-5xl uppercase text-center sm:text-start">
+                        Man
                         jacket</h3>
                     <div class="m-jackets mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- single-item -->
@@ -171,13 +175,14 @@
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-4.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Snowboard Jacket Mens</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
                                     <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -194,13 +199,14 @@
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-5.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Man Leather Jackets</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
                                     <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -217,13 +223,14 @@
                             <div class="product-image p-10 bg-slate-100 rounded-lg">
                                 <img src="assets/images/jacket-6.png" alt="">
                             </div><!-- product-image -->
-                            <div class="product-details mt-5 space-y-3">
+                            <div class="product-details font-['Roboto'] mt-5 space-y-3">
                                 <h4 class="text-secondarytextcolor text-2xl font-bold">Man Casual Jackets</h4>
-                                <p class="textcolor">Lorem Ipsum is simply dummy text of the
+                                <p class="textcolor text-base">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry.</p>
                                 <div class="price-btn flex lg:flex-col xl:flex-row justify-between items-center">
                                     <h5 class="text-primarytextcolor text-4xl font-extrabold">$235</h5>
-                                    <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white font-semibold">
+                                    <button
+                                        class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -241,32 +248,31 @@
 
             <!-- feature start -->
             <section class="features mt-20 mb-16">
-                <div
-                    class="container mx-auto flex flex-col-reverse lg:flex-row  items-center justify-between gap-x-24">
+                <div class="container mx-auto flex flex-col-reverse lg:flex-row  items-center justify-between gap-x-24">
                     <div class="f-items basis-2/5 space-y-8 mt-10 lg:mt-0">
                         <div class="feature-item flex items-center px-5 py-6 rounded-xl shadow-lg">
                             <img src="assets/images/house.png" alt="" class="w-16">
-                            <div class="feature-content ml-9">
-                                <h5 class="text-secondarytextcolor font-bold">Find the Perfect Fit</h5>
-                                <p class="text-textcolor">Everybody is different, which is why we
+                            <div class="feature-content font-['Roboto'] ml-9">
+                                <h5 class="text-secondarytextcolor text-2xl font-bold">Find the Perfect Fit</h5>
+                                <p class="text-textcolor text-base">Everybody is different, which is why we
                                     offer styles for every body.</p>
                             </div><!-- feature-content -->
                         </div><!-- feature-item -->
 
                         <div class="feature-item flex items-center px-5 py-6 rounded-xl shadow-lg">
                             <img src="assets/images/box.png" alt="" class="w-16">
-                            <div class="feature-content ml-9">
-                                <h5 class="text-secondarytextcolor font-bold">Free Exchanges</h5>
-                                <p class="text-textcolor">Everybody is different, which is why we
+                            <div class="feature-content font-['Roboto'] ml-9">
+                                <h5 class="text-secondarytextcolor text-2xl font-bold">Free Exchanges</h5>
+                                <p class="text-textcolor text-base">Everybody is different, which is why we
                                     offer styles for every body.</p>
                             </div><!-- feature-content -->
                         </div><!-- feature-item -->
 
                         <div class="feature-item flex items-center px-5 py-6 rounded-xl shadow-lg">
                             <img src="assets/images/question.png" alt="" class="w-16">
-                            <div class="feature-content ml-9">
-                                <h5 class="text-secondarytextcolor font-bold">Contact Our Seller</h5>
-                                <p class="text-textcolor">Everybody is different, which is why we
+                            <div class="feature-content font-['Roboto'] ml-9">
+                                <h5 class="text-secondarytextcolor text-2xl font-bold">Contact Our Seller</h5>
+                                <p class="text-textcolor text-base">Everybody is different, which is why we
                                     offer styles for every body.</p>
                             </div><!-- feature-content -->
                         </div><!-- feature-item -->
@@ -277,11 +283,10 @@
                 </div><!-- container -->
             </section>
             <!-- feature end -->
-
-            <footer class="text-center text-secondarytextcolor font-semibold py-3 bg-headerbg">
-                <p>Copyright © 2024 Penguin. All rights reserved.</p>
-            </footer>
         </main>
+        <footer class="text-center text-secondarytextcolor font-['Bebas_Neue'] py-3 bg-headerbg">
+            <p>Copyright © 2024 Penguin. All rights reserved.</p>
+        </footer>
     </div><!-- front-page -->
 
 </body>
