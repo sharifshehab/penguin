@@ -23,16 +23,34 @@
             }
         }
     </script>
+    <style>
+        .container{
+            width: 1140px;
+            padding: 0 30px;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="front" class="front-page">
         <header class="bg-headerbg">
-            <div class="container mx-auto">
-                <nav></nav>
+            <div class="container mx-auto"> 
+                <nav class="flex justify-between items-center py-10">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="" class="w-80">
+                    </div><!-- logo -->
+                   <div class="navigation">
+                        <ul class="flex items-center gap-[4vh] uppercase font-semibold">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">product</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                   </div><!-- navigation -->
+                </nav>
                 <!-- hero section start -->
-                <div class="hero flex flex-col-reverse sm:flex-row justify-between items-center py-20 sm:py-32 px-3 md:px-12">
+                <div class="hero flex flex-col-reverse sm:flex-row justify-between items-center py-20 sm:py-32"> <!-- px-3 md:px-12 -->
                     <div class="hero-content space-y-5 text-center sm:text-start mt-14 sm:mt-0">
                         <h2>
                             <span
@@ -65,7 +83,7 @@
         <main>
             <!-- woman section start -->
             <section class="women-jacket mt-20 mb-16">
-                <div class="container mx-auto px-5 md:px-5 xl:px-0">
+                <div class="container mx-auto px-5">
                     <h3 class="text-secondarytextcolor text-5xl font-bold uppercase text-center sm:text-start">woman
                         jacket</h3>
                     <div class="w-jackets mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -144,7 +162,7 @@
 
             <!-- man section start -->
             <section class="man-jacket mt-20 mb-16">
-                <div class="container mx-auto px-5 md:px-5 xl:px-0">
+                <div class="container mx-auto">
                     <h3 class="text-secondarytextcolor text-5xl font-bold uppercase text-center sm:text-start">Man
                         jacket</h3>
                     <div class="m-jackets mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -223,7 +241,8 @@
 
             <!-- feature start -->
             <section class="features mt-20 mb-16">
-                <div class="container mx-auto px-5 md:px-5 xl:px-0 flex flex-col-reverse lg:flex-row  items-center justify-between gap-x-24">
+                <div
+                    class="container mx-auto flex flex-col-reverse lg:flex-row  items-center justify-between gap-x-24">
                     <div class="f-items basis-2/5 space-y-8 mt-10 lg:mt-0">
                         <div class="feature-item flex items-center px-5 py-6 rounded-xl shadow-lg">
                             <img src="assets/images/house.png" alt="" class="w-16">
@@ -253,13 +272,13 @@
                         </div><!-- feature-item -->
                     </div><!-- f-items -->
                     <div class="feature-image flex-1">
-                        <img src="assets/images/shopping.png" alt=""> 
+                        <img src="assets/images/shopping.png" alt="">
                     </div><!-- feature-image -->
                 </div><!-- container -->
             </section>
             <!-- feature end -->
 
-            <footer class="text-center text-secondarytextcolor font-semibold py-3 bg-headerbg" >
+            <footer class="text-center text-secondarytextcolor font-semibold py-3 bg-headerbg">
                 <p>Copyright © 2024 Penguin. All rights reserved.</p>
             </footer>
         </main>
