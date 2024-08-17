@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguin</title>
+    <title>Penguin - Winter wear</title>
+    <!-- fav-icon -->
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <!-- tailwind css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind custom designs -->
@@ -31,7 +33,7 @@
     <div id="front" class="front-page">
         <header class="bg-headerbg">
             <div class="container mx-auto">
-                <nav class="flex justify-between items-center py-10">
+                <nav class="flex flex-col md:flex-row justify-between items-center py-10 gap-y-8">
                     <div class="logo">
                         <img src="assets/images/logo.png" alt="" class="w-80">
                     </div><!-- logo -->
@@ -51,7 +53,7 @@
                     <div class="hero-content space-y-5 text-center sm:text-start mt-14 sm:mt-0">
                         <h2>
                             <span
-                                class="font-['Bebas_Neue'] text-6xl sm:text-7xl leading-tight text-primarytextcolor">Be
+                                class="font-['Bebas_Neue'] text-6xl sm:text-7xl leading-tight text-primarytextcolor" id="text">Be
                                 the Penguins</span>
                             <br>
                             <span
@@ -61,7 +63,7 @@
                         <p class="text-textcolor font-['Roboto'] text-base w-full sm:w-3/4">Lorem Ipsum is simply dummy
                             text of the printing
                             and typesetting industry.</p>
-                        <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium">
+                        <button class="uppercase px-8 py-3 rounded-lg bg-btnbg text-white text-base font-medium" id="buy-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 inline mr-1.5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -285,6 +287,7 @@
             <p>Copyright © 2024 Penguin. All rights reserved.</p>
         </footer>
     </div><!-- front-page -->
+    <script src="script.js"></script>
 </body>
 
 </html>
